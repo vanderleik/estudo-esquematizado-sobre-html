@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <p>
+        O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.
+    </p>
+    <h3>Código em Python</h3>
+    <p>
+        <pre>
+            <code>
+                num = int(input('Digie um número'))
+                if num % 2 == 0;
+                    print(f'O número {num} é PAR')
+                else:
+                    print('fOnúmero {num} é IMPAR')
+                print('Fim do Programa')
+            </code>
+        </pre>
+    </p>
+    <h3>Mesmo código em Java</h3>
+    <p>
+        <pre>
+            <code>
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int num = sc.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println("O número " + num + " é PAR");
+        } else {
+            System.out.println("O número " + num + " é IMPAR");
+        }
+
+        System.out.println("Fim do Programa");    
+            </code>
+        </pre>
+    </p>
+    <h3>Mesmo código em JavaScript</h3>
+    <p>
+        <pre>
+            <code>
+                const readline = require('readline').createInterface({
+                    input: process.stdin,
+                    output: process.stdout
+                  });
+                  
+                  readline.question('Digite um número: ', num => {
+                    if (num % 2 === 0) {
+                      console.log(`O número ${num} é PAR`);
+                    } else {
+                      console.log(`O número ${num} é IMPAR`);
+                    }
+                    console.log("Fim do Programa");
+                    readline.close();
+                  });                  
+            </code>
+        </pre>
+    </p>
+    <h2>Citações</h2>
+    <p>
+        Como diria o pai de um amigo meu, <q>o computador é um burro muito rápido</q>
+    </p>
+    <p><a href="../index.html">Retorna à página inicial</a></p>
+</body>
+</html>
