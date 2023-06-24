@@ -6,24 +6,34 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Fontes em CSS</title>
     <style>
+        
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
             /*
             Medidas absolutas:
             cm, mm, in, px, pt, pc,
-
+            
             Medidas relativas:
             em (altura em relação ao 'm'), ex (altura em relação ao 'x', rem (relativo a fonte configurada no body), vw (largura da view port [tela]), vh (largura da view port), %.
-
+            
             Como padrão usar px e/ou em (recomendação da W3C).
             */
-
+            
             /* O tamanho natural da fonte é 16px que é igual a 1em*/
-            font-size: 16px;
+            /* font: italic, normal, 16px, Arial */
+        }
+        
+        h1{
+            /* font-style: italic; */
+            /* font-weight: bold; */
+            /* font-size: 16px; */
+            /* font-family: 'Times New Roman', Times, serif; */
+            /* Shorthand font */
+            font: italic bold 20px 'Times New Roman', Times, serif;
         }
 
-        h1, h2 {
-            font-family: 'Times New Roman', Times, serif;
+        h2 {
+            font: bold 3em 'Times new Roman';
         }
     </style>
 </head>
