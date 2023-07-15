@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: solid 1px black;
+            height: 200px;
+            text-align: center;
+            width: 300px;
+        }
+
+        div > p {/*estou adicionando um estilo à um parágrafo filho da 'div' */
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <h1>Exemplo de pseudo-classe</h1>
+    <p>Passe o mouse em cima do texto abaixo:</p>
+    <div>
+        Passe o mouse aqui!!!
+        <p>Texto escondido</p>
+    </div>
+    <p>Fim do exemplo.</p>
+
+    <p><a href="../index.html">Retorna à página inicial</a></p> 
+</body>
+</html>
